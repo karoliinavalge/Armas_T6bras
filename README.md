@@ -1,1 +1,2 @@
-# Veebilehe_grupiprojekt
+# Lemmikloomapood :D
+# Parem kui okidoki
