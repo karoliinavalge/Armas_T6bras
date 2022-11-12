@@ -1,2 +1,55 @@
-.firmanimi {color: rgb(223, 71, 86);
-    font-size: 40px;}
+.taust{background-color: rgba(218, 255, 213, 1);}
+
+.firmanimi {color:rgba(250, 107, 132, 1);
+    font-family: 'Changa One';
+    font-size: 40px; 
+    flex:45%;
+    padding: 0px;
+    text-align: left;}
+
+.rida{display: flex;}
+
+.logo{flex:5%;
+    padding: 15px;}
+
+.menüü{ flex:50%;
+    padding: 0px;
+    text-align: right;
+    position: relative;
+    color: black;}
+
+.menüü_tekst{ font-family: 'Shanti';
+    font-size: 20px;
+    position: absolute;
+    color: black;
+    bottom: 9px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%)}
+
+.ring{height: 500px;
+    width: 500px;
+    background-color: rgba(250, 107, 132, 1);
+    border-radius: 53% 47% 70% 30% / 19% 79% 21% 81%;
+    display: inline-block;}
+
+.ristkülik{border-radius: 76px;
+    background: #87C159;
+    box-shadow:  35px 35px 0px #71a24b,
+                 -35px -35px 0px #9de067;
+    margin-left: auto;
+    margin-right: auto;}
+
+.ristkülik2{height: 150px;
+    width: 150px;
+    background-color: rgba(135, 193, 89, 1);
+    margin-left: auto;
+    margin-right: auto;}
+
+.pilt{ display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+.vahe_leht{height: 1000px;
+width: auto;
+background-color: rgba(243, 195, 1, 1);}
