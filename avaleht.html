@@ -2,40 +2,84 @@
 <html>
 <head>
     <meta charset= "utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Changa One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Shanti' rel='stylesheet'>
+    <meta name = "viewport" content="with-device-width, initial-scale=1.0">
     <title> lemmiklooma pood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 
-<body class = "taust">
-    <div>
-        <link rel= "stylesheet" type = "text/css" href="style.css">
-        <div class = "rida"> 
-            <div class = "logo"> 
-                <img src="logo.png" alt="logo" height="65" width="65"> 
+<body>
+    <section class ="päis">
+        <nav>
+            <a href="avaleht.html"><img src="pildid/logo.png"> </a> 
+            <h1 class="firmanimi">ARMAS TÕBRAS</h1> 
+            <div class="menüü">
+                <ul>
+                <li><a href="avaleht.html">AVALEHT</a></li>
+                <li><a href="pood.html" >POOD</a></li>
+                <li><a href="kasvatamine.html">KASVATAMINE</a></li>
+                <li><a href="meist.html">MEIST</a></li>
+                </ul> 
             </div>
-            <div class = "firmanimi"> 
-                <h1 class="firmanimi">ARMAS TÕBRAS</h1> 
+        </nav>
+        <div class="päisetekst">
+            <h1>Eesti parim lemmiklooma e-pood</h1>
+            <p>kindlasti parem kui OKIDOKI. või kuldne börs</p>
+        </div>
+    </section>
+    <!------kasvatamise osa esilehel------>
+    <section class="kasvatamine">
+        <div class="rida">
+            <div class="veerg_kasvatamine">
+                <img src="pildid/loomasöök.jpg">
             </div>
-            <div class = "menüü">
-                <div class = "ristkülik"><div class = "ristkülik2"></div></div>
-                
-                <div class = "menüü_tekst">
-                    <a href="avaleht.html" target="_self">AVALEHT</a>
-                    <a href="pood.html" target="_self">POOD</a>
-                    <a href="kasvatamine.html" target="_self">KASVATAMINE</a>
-                    <a href="meist.html" target="_self">MEIST</a>
+            <div class="veerg_kasvatamine">
+                <h1>Lemmiku kasvatamine</h1>
+                <p>Lemmiku õige kasvatamine on väga tähtis, sest sellega kindlustad enda ja looma turvalisuse. 
+                    Quisque volutpat eget velit vitae convallis. Quisque pulvinar nulla eros, eget posuere orci 
+                    varius quis. Nullam malesuada in sapien nec finibus. Quisque eu vestibulum quam.<br>
+                    Vestibulum at pellentesque erat. Mauris dapibus elit mauris, ut dapibus arcu ultrices non. 
+                    Donec quam eros, ultrices eget luctus in, mattis at lectus. Morbi luctus metus at augue 
+                    volutpat tristique. Donec cursus dolor orci, id mollis lacus semper quis. Proin ultrices 
+                    sem nisl, eu gravida velit dignissim a.<br>
+                    Donec ligula tortor, pretium venenatis justo eu, pellentesque hendrerit massa. 
+                    Suspendisse maximus elit vel tempus convallis. Nunc pharetra diam a sem finibus, 
+                    semper congue sem auctor. Proin vitae fringilla lacus. Maecenas vulputate interdum arcu, 
+                    quis varius nibh scelerisque finibus. Nulla lacus leo, aliquet elementum velit sit amet, 
+                    facilisis rhoncus turpis. Etiam maximus faucibus sollicitudin.</p>
+            </div>
+            
+        </div>
+    </section>
+    <!------top loomad------>
+    <section class="ostmine">
+        <h1>Populaarsemad loomad</h1>
+        <div class="rida">
+            <div class="veerg_ostmine">
+                <img src="pildid/loomasöök.jpg">
+                <div class="looma_lühikirjeldus">
+                    <a href="pood.html"><h2>Loom 1</h2></a>
+                    <a href="pood.html"><p>Hästi tore loom</p></a>
+                </div>
+            </div>
+            <div class="veerg_ostmine">
+                <img src="pildid/loomasöök.jpg">
+                <div class="looma_lühikirjeldus">
+                    <a href="pood.html"><h2>Loom 2</h2></a>
+                    <a href="pood.html"><p>veits sussy aga nunnu</p></a>
+                </div>
+            </div>
+            <div class="veerg_ostmine">
+                <img src="pildid/loomasöök.jpg">
+                <div class="looma_lühikirjeldus">
+                    <a href="pood.html"><h2>Loom 3</h2></a>
+                    <a href="pood.html"><p>mõnus seltsiline</p></a>
                 </div>
             </div>
         </div>
-        <img class="pilt" src="kutsikad.jpg" alt="kutsikad" height="400" width="auto">
-        <div class="vahe_leht">
-            <img class="pilt" src="kutsikad.jpg" alt="kutsikad" height="600" width="1000">
-        </div>
-        <p> avalehe tähtis jutt</p>
-        <span class="ring"></span>
-        <span class="ring"></span>
-        <span class="ring"></span>
-    </div>
+    </section>
+    <!------footer------>
 </body>
 </html>
