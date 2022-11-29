@@ -61,6 +61,9 @@ nav img{width: 50px;}
 .päisetekst p{font-weight: 600;
     font-size: 34px;}
 
+
+
+/*jalus*/
 .jalus{width: 100%;
     background-color: rgba(215, 228, 242, 1);
     background-position: center;
@@ -72,8 +75,7 @@ nav img{width: 50px;}
     position: relative;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    left: 15%;
-    text-align: center;}
+    left: 15%;}
 
 .jaluse_menüü{flex: 1;
     text-align: center;}
@@ -89,4 +91,11 @@ nav img{width: 50px;}
     font-size: 14px;
     font-weight: 300;}
 
-.jaluse_menüü img{width: 300px;}
+.jaluse_tabel{display: flex;
+    position: relative;
+    overflow: hidden;
+    left:38%;
+    width: 24%;}
+
+.jaluse_tabel img {width: 30px;
+    padding: 0% 2%;}
