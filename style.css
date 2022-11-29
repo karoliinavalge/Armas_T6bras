@@ -98,4 +98,7 @@ nav img{width: 50px;}
     width: 24%;}
 
 .jaluse_tabel img {width: 30px;
-    padding: 0% 2%;}
+    padding: 0% 2%;
+    transition: 0.5s;}
+
+.jaluse_tabel:hover img{width: 40px;}

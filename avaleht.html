@@ -11,10 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 
+<!----päis---->
 <body>
     <section class ="päis">
         <nav>
-            <a href="avaleht.html"><img src="pildid/logo.png"> </a> 
+            <a href="avaleht.html"><img src="pildid/logo.png" alt="logo"> </a> 
             <h1 class="firmanimi">ARMAS TÕBRAS</h1> 
             <div class="menüü">
                 <ul>
@@ -27,14 +28,42 @@
         </nav>
         <div class="päisetekst">
             <h1>Eesti parim lemmiklooma e-pood</h1>
-            <p> parem kui OKIDOKI ja kuldne börs </p>
+            <p> kasvatamise nipid ja loomad mugavalt ühest kohast</p>
         </div>
     </section>
+
+
     <!------kasvatamise osa esilehel------>
     <section class="kasvatamine">
         <div class="rida">
             <div class="veerg_kasvatamine">
-                <img src="pildid/loomasöök.jpg">
+                <div class="slideshow-container">
+        
+                    <div class="mySlides fade">
+                      <img src="pildid/image1.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="pildid/loomamänguajad.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="pildid/loomasöök.jpg" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+                    <script src="avaleht.js"></script>
             </div>
             <div class="veerg_kasvatamine">
                 <h1>Lemmiku kasvatamine</h1>
@@ -50,37 +79,42 @@
                     semper congue sem auctor. Proin vitae fringilla lacus. Maecenas vulputate interdum arcu, 
                     quis varius nibh scelerisque finibus. Nulla lacus leo, aliquet elementum velit sit amet, 
                     facilisis rhoncus turpis. Etiam maximus faucibus sollicitudin.</p>
+                    <a href="kasvatamine.html" class="nupp">Uuri lähemalt</a>
             </div>
             
         </div>
     </section>
+
+
     <!------top loomad------>
     <section class="ostmine">
-        <h1>Populaarsemad loomad</h1>
+        <h1>Uued loomad</h1>
         <div class="rida">
             <div class="veerg_ostmine">
-                <img src="pildid/loomasöök.jpg">
+                <img src="pildid/hallkass.jpg">
                 <div class="looma_lühikirjeldus">
-                    <a href="pood.html"><h2>Loom 1</h2></a>
-                    <a href="pood.html"><p>Hästi tore loom</p></a>
+                    <a href="pood.html"><h2>Sipsik</h2></a>
+                    <a href="pood.html"><p>iseseisev isane kass Sipsik</p></a>
                 </div>
             </div>
             <div class="veerg_ostmine">
-                <img src="pildid/loomasöök.jpg">
+                <img src="pildid/küülik.jpg">
                 <div class="looma_lühikirjeldus">
-                    <a href="pood.html"><h2>Loom 2</h2></a>
-                    <a href="pood.html"><p>veits sussy aga nunnu</p></a>
+                    <a href="pood.html"><h2>Bibi</h2></a>
+                    <a href="pood.html"><p>suure isuga näriline </p></a>
                 </div>
             </div>
             <div class="veerg_ostmine">
-                <img src="pildid/loomasöök.jpg">
+                <img src="pildid/parrot.jpg">
                 <div class="looma_lühikirjeldus">
-                    <a href="pood.html"><h2>Loom 3</h2></a>
-                    <a href="pood.html"><p>mõnus seltsiline</p></a>
+                    <a href="pood.html"><h2>Papagoi Lotte</h2></a>
+                    <a href="pood.html"><p>pirtsaka käitumisega 2. aastane papagoi</p></a>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!------jalus------>
     <section class="jalus">
         <footer class="jaluse_kast">
