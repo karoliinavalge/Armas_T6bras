@@ -1,0 +1,125 @@
+.päis{background-color: rgba(215, 228, 242, 1);    
+    background-image:url(pildid/koerjakass.png);
+    min-height: 60vh;}
+
+.rida{display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 1%;}
+
+/*kes me oleme osa */
+
+.meist{min-height: 100vh;
+    width: 100%;
+    background-color:rgba(135, 193, 89, 1);
+    background-position: center;
+    background-size: cover;
+    position: relative;}
+
+.meist h1{text-align: center;}
+
+.meist_veerg{flex-basis: 50%;
+    text-align:justify;
+    padding: 0% 3%;}
+
+.meist_veerg h1{font-weight: 800;
+    font-size: 40px;
+    text-align: left;
+    color: rgba(250, 107, 132, 1);}
+
+.meist_veerg h2{font-weight: 600;
+    font-size: 25px;
+    color: rgba(250, 107, 132, 1);
+    text-align: left;}
+
+.sotsiaalmeedia{padding: 0% 5%;
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    box-sizing: border-box;}
+
+.pilt img{border-radius: 10px;}
+
+/*ekraani väiksemaks tehes ilmnevad muudatused*/
+@media(max-width: 700px){
+    .rida{flex-direction: column-reverse;}
+    .pilt img{width: 500px;
+    height: auto;}
+    .meist{min-height: 150vh;}
+    .sotsiaalmeedia{width: 30px;}
+}
+
+
+
+/*võta meiega ühendust osa*/
+.kontakt{min-height: 100vh;
+    width: 100%;
+    background-color:  rgba(215, 228, 242, 1);
+    background-position: center;
+    background-size: cover;
+    position: relative;}
+
+.kontakt h1{font-weight: 800;
+    font-size: 40px;
+    color: rgba(243, 195, 1, 1);
+    padding-top: 1%;}
+
+.kontakt_rida{display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 1%;}
+
+label{font-size: 16px;
+    font-weight: 600;}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid rgba(173, 202, 203, 1);
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+box-sizing: border-box;
+border-radius: 10px;
+background-color: rgb(237, 239, 241);
+}
+
+input[type=submit] {
+background-color: rgba(135, 193, 89, 1);
+color: black;
+padding: 12px 25px;
+border: none;
+cursor: pointer;
+box-sizing: border-box;
+border-radius: 10px;
+font-size: 16px;
+font-weight: 600;
+}
+
+input[type=submit]:hover {
+background-color: rgba(243, 195, 1, 1);
+box-shadow: 0 0 20px 0 rgba(0, 0, 0,0.4)
+}
+
+.kontakt_veerg {
+float: left;
+width: 50%;
+margin-top: 6px;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.kontakt_veerg img{width: 400px;
+padding-left: 15%;}
+
+
+@media screen and (max-width: 700px) {
+.kontakt_veerg, input[type=submit] {
+    width: 100%;
+    margin-top: 0; }
+.kontakt_veerg img{width: 200px;
+    padding-left: 15%;}
+}
