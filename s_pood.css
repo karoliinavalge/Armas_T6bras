@@ -1,0 +1,227 @@
+*{margin: 0;
+    padding: 0;
+    font-family: 'Changa', sans-serif;}
+
+/*päis*/
+
+.päis2{min-height: 100vh;
+    width: 100%;
+    background-image:url(pildid/koerjaomanik.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;}
+
+nav{display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;}
+
+nav img{width: 50px;}
+
+.menüü{flex: 1;
+    text-align: right;}
+
+.menüü ul li{list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-weight: 600;}
+
+.menüü ul li a{color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;}
+
+.menüü ul li::after{content: "";
+    width: 0%;
+    height: 2px;
+    background: rgba(135, 193, 89, 1);
+    display: block;
+    margin: auto;
+    transition: 0.5s;}
+
+.menüü ul li:hover::after{width: 100%}
+
+.firmanimi {color:rgba(250, 107, 132, 1);
+    font-weight: 800;
+    font-size: 30px; 
+    text-align: left;
+    padding: 1px 12px;}
+
+.päisetekst{width: 90%;
+    color:rgb(107, 115, 172);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;}
+
+.päisetekst h1{font-weight: 800;
+    font-size: 60px;}
+.päisetekst p{font-weight: 600;
+    font-size: 34px;}
+
+/*sisu*/
+
+.rida{display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10%;}
+
+.ostmine{
+    background-color: rgba(180, 243, 167, 1);
+    text-align: center;
+    min-height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.ostmine h1{font-weight: 800;
+    font-size: 40px;
+    color: rgba(250, 107, 132, 1);
+    padding-top: 1%;}
+
+.veerg_ostmine{flex-basis: 33%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    left: 3.5%;}
+
+.veerg_ostmine img{display: block;
+    width: 450px;;
+    height: 300px;}
+
+.veerg_ostmine:hover{box-shadow: 0 0 20px 0 rgba(0, 0, 0,0.4);}
+
+.looma_lühikirjeldus{background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;}
+
+.looma_lühikirjeldus:hover{background: rgba(135, 193, 89, 0.8);}
+
+.looma_lühikirjeldus h2{width: 100%;
+    font-weight: 600;
+    color: rgba(250, 107, 132, 1);
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;}
+
+.looma_lühikirjeldus button{
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgba(250, 107, 132, 1);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+}
+
+.looma_lühikirjeldus button:hover{
+    background-color: rgba(213, 62, 87, 1);
+}
+
+.osta {
+    right: 16%;
+}
+
+.info {
+    left: 39%;
+}
+
+.looma_lühikirjeldus p{width: 100%;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.5s;}
+
+.looma_lühikirjeldus:hover h2{bottom: 55%;
+    opacity: 1;}
+.looma_lühikirjeldus:hover p{bottom: 48%;
+    opacity: 1;}
+.looma_lühikirjeldus:hover button{bottom: 28%;
+    opacity: 1;
+}
+
+    
+/*ekraani väiksemaks tehes ilmnevad muudatused*/
+@media(max-width: 700px){
+    .rida{flex-direction: column;}
+    .ostmine{min-height: 180vh;}
+    .kasvatamine{min-height: 180vh;}
+}
+
+@media(max-width: 1000px){
+  .rida{flex-direction: column;}
+  .ostmine{min-height: 180vh;}
+  .kasvatamine{min-height: 180vh;}
+}
+
+
+
+/*jalus*/
+.jalus{width: 100%;
+    background-color: rgba(180, 243, 167, 1);
+    background-position: center;
+    background-size: cover;
+    position: relative;}
+
+.jaluse_kast{width: 70%;
+    background-color: rgba(173, 202, 203, 1);
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    left: 15%;}
+
+.jaluse_menüü{flex: 1;
+    text-align: center;}
+
+.jaluse_menüü ul li{list-style: none;
+    display: inline-block;
+    padding: 8px 1px;
+    position: relative;
+    font-weight: 300;}
+
+.jaluse_menüü ul li a{color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;}
+
+.jaluse_tabel{display: flex;
+    position: relative;
+    overflow: hidden;
+    left:38%;
+    width: 24%;}
+
+.jaluse_tabel img {width: 30px;
+    padding: 0% 2%;
+    transition: 0.5s;}
+
+.jaluse_tabel:hover img{width: 40px;}
